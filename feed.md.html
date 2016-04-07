@@ -1,0 +1,158 @@
+﻿<!doctype html public '-//W3C//DTD HTML 4.0 Transitional //EN'>
+<html>
+<head>
+<title>feed</title>
+<meta charset='UTF-8' />
+<meta name='generator' content='EverEdit' />
+<link href='./static/default.css' rel='stylesheet'></link>
+<link href='./static/prettify.css' rel='stylesheet'></link>
+<script type='text/javascript' src='./static/prettify.js'></script>
+<script type='text/javascript' src='./static/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='./static/toc.js'></script>
+</head>
+<body>
+<div id='generated-toc'></div>
+<hr />
+
+<h2>title: 动态页面</h2>
+
+<p>可能敢兴趣的人:</p>
+
+<p>查找的是当前好友的好友。</p>
+
+<p>URL: cp.jsp?ac=friend&amp;op=find</p>
+
+<pre><code class="json">{
+    "uid": 0,
+    "op": "find",
+    "onLineList": [],
+    "friendList": [// 可能认识的人列表
+        {   // 头像
+            "avatar": "&lt;img src=\"data/avatar/000/00/00/01_avatar_middle.jpg\" onerror=\"this.onerror=null;this.src='data/avatar/noavatar_middle.gif'\"&gt;",
+            "uid": 1, // 用户ID
+            "username": "admin" // 用户名
+        }
+    ]
+}</code></pre>
+
+<p>最近访客:</p>
+
+<p>URL: space.jsp?do=friend&amp;view=visitor&amp;callback=fn</p>
+
+<pre><code class="java">{
+    // 总的访问量
+    "viewnum": 23,
+    "count": 3,
+    "actives": {
+        "me": " class=\"active\""
+    },
+    "multi": "",
+    "list": [
+        {
+            // 用户ID
+            "uid": 2,
+            "resideprovince": "",
+            "sex": 0,
+            "residecity": "",
+            "c": "",
+            "dateline": 1458790435,
+            "spacenote": "&lt;img src=\"image/face/1.gif\" class=\"face\"&gt;",
+            // 头像
+            "avatar": "&lt;img src=\"data/avatar/000/00/00/02_avatar_middle.jpg\" onerror=\"this.onerror=null;this.src='data/avatar/noavatar_middle.gif'\"&gt;",
+            "isfriend": true,
+            "username": "guozi",// 用户名
+            "p": "",
+            "gColor": "",
+            "note": "",
+            "gIcon": ""
+        },
+        {
+            "uid": 5,
+            "resideprovince": "",
+            "sex": 0,
+            "residecity": "",
+            "c": "",
+            "dateline": 1457575393,
+            "spacenote": "ddy01",
+            "avatar": "&lt;img src=\"data/avatar/000/00/00/05_avatar_middle.jpg\" onerror=\"this.onerror=null;this.src='data/avatar/noavatar_middle.gif'\"&gt;",
+            "isfriend": true,
+            "username": "ddy01",
+            "p": "",
+            "gColor": "",
+            "note": "ddy01",
+            "gIcon": ""
+        },
+        {
+            "uid": 4,
+            "resideprovince": "",
+            "sex": 1,
+            "residecity": "",
+            "c": "",
+            "dateline": 1457575329,
+            "spacenote": "1",
+            "avatar": "&lt;img src=\"data/avatar/000/00/00/04_avatar_middle.jpg\" onerror=\"this.onerror=null;this.src='data/avatar/noavatar_middle.gif'\"&gt;",
+            "isfriend": true,
+            "username": "ddy",
+            "p": "",
+            "gColor": "",
+            "note": "1",
+            "gIcon": ""
+        }
+    ],
+    "a_actives": {
+        "visitor": " class=\"current\""
+    },
+    // 今日访客
+    "todayviewnum": 0
+}</code></pre>
+
+<p>动态信息和首页的请求一样。</p>
+
+<p>评论的操作列表如下:</p>
+
+<table>
+    <tr>
+        <th>操作</th>
+        <th>URL</th>
+        <th>参数</th>
+    </tr>
+    <tr>
+        <td>动态评论：</td>
+        <td>cp.jsp?ac=feed&feedid=? </td>
+        <td> 
+        feedid:              当前的动态的ID <br>
+        message:             评论的信息     <br>
+        commentsubmit:true   验证: 大于2个字符       <br>
+        <br> 
+        </td>
+    </tr>
+    <tr>
+        <td>回复:</td>
+        <td>cp.jsp?ac=comment</td>
+        <td> 
+        message: 评论的内容(后台拼串)，前台传递也行。    <br> 
+        id:32             日志的id                  <br>
+        idtype:blogid     id类型                    <br>
+        cid:72            评论的id                  <br>
+        commentsubmit:true   评论提交验证通过        <br>
+        </td>
+    </tr>
+
+    <tr>
+        <td>删除:</td>
+        <td>cp.jsp?ac=comment&op=delete&cid=77&inajax=1  </td>
+        <td>cid  当前评论的id。</td>
+    </tr>
+
+
+</table>
+<script type='text/javascript'>
+$(document).ready(function(){
+  if($('code').length>0){
+    $('code').parent().addClass('prettyprint');
+    prettyPrint();
+};
+});
+</script>
+</body>
+</html>
