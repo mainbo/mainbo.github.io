@@ -63,7 +63,8 @@ title: 首页数据
                     "summary": "1.1 JVM  1.1.1. Java内存模型，Java内存管理，Java堆和栈，垃圾回收    http://www.jcp.org/en/jsr/detail?id=133    http://ifeve.com/jmm-faq/    1.1.2. 了", 
                     "subject": "<a href=\"space.jsp?uid=3&do=blog&id=32\">qewrwerqwer</a>"
                 }, 
-                // 当前动态下的评论，数据形式
+                // 当前动态下的评论，数据形式  
+                /* 修改:  2016-4-8 11:20:11  添加 replycid : 0  表示当前评论下没有回复。 */
                 "comment": [
                     {
 	                    //内容
@@ -76,80 +77,28 @@ title: 首页数据
                         "authorid": 3,  //回复的id 
                         "dateline": 1459129428, // 时间
                         "cid": 70, // 评论id
-                        "ip": "127.0.0.1"
+                        "ip": "127.0.0.1",
+                        "replycid": 108,   //回复的评论id
+						"replyname": "guozi", // 回复评论的用户名字
+						"replyuid": 2      //回复评论的用户id
+           
                     },
                     {
-                        "message": "<div class=\"quote\"><span class=\"q\"><b>dudy</b>: <img src=\"image/face/1.gif\" class=\"face\"></span></div>我去》》》》》",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "guozi",
-                        "idtype": "blogid",
-                        "authorid": 2,
-                        "dateline": 1459146753,
-                        "cid": 72,
-                        "ip": "127.0.0.1"
-                    },
-                    {
-                        "message": "ddddd",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "dudy",
-                        "idtype": "blogid",
-                        "authorid": 3,
-                        "dateline": 1459156360,
-                        "cid": 73,
-                        "ip": "127.0.0.1"
-                    },
-                    {
-                        "message": "<div class=\"quote\"><span class=\"q\"><b>guozi</b>: 我去》》》》》</span></div>qqqqqqqqqqqqqqqq",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "dudy",
-                        "idtype": "blogid",
-                        "authorid": 3,
-                        "dateline": 1459156511,
-                        "cid": 74,
-                        "ip": "127.0.0.1"
-                    },
-                    {
-                        "message": "评论TEST",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "dudy",
-                        "idtype": "blogid",
-                        "authorid": 3,
-                        "dateline": 1459159592,
-                        "cid": 76,
-                        "ip": "127.0.0.1"
-                    },
-                    {
-                        "message": "的点点滴滴",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "dudy",
-                        "idtype": "blogid",
-                        "authorid": 3,
-                        "dateline": 1459217870,
-                        "cid": 81,
-                        "ip": "127.0.0.1"
-                    },
-                    {
-                        "message": "<div class=\"quote\"><span class=\"q\"><b>dudy</b>: 的点点滴滴</span></div>去去去去去去去去去去去去去去去去",
-                        "id": 32,
-                        "uid": 3,
-                        "magicflicker": 0,
-                        "author": "guozi",
-                        "idtype": "blogid",
-                        "authorid": 2,
-                        "dateline": 1459222875,
-                        "cid": 83,
-                        "ip": "127.0.0.1"
-                    }
+                        author: "dudy"
+						authorid: 3
+						avatar: "<img src="data/avatar/000/00/00/03_avatar_middle.jpg" onerror="this.onerror=null;this.src='data/avatar/noavatar_middle.gif'">"
+						cid: 103
+						dateline: 1460016954
+						id: 56
+						idtype: "blogid"
+						ip: "127.0.0.1"
+						magicflicker: 0
+						message: "dudy 评论 ddy01 的日志"
+						replycid: 0
+						replyname: ""
+						replyuid: 0
+						uid: 5
+                    }...
                 ]，
                 "target_ids": "", 
                 "friend": 0, 
