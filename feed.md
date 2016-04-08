@@ -126,8 +126,11 @@ URL: space.jsp?do=friend&view=visitor&callback=fn
 	
 	<tr>
 		<td>删除:</td>
-		<td>cp.jsp?ac=comment&op=delete&cid=77&inajax=1  </td>
-		<td>cid  当前评论的id。</td>
+		<td>cp.jsp?ac=comment&op=delete&cid=77</td>
+		<td>cid  当前评论的id。 </br>
+			deletesubmit=true
+		</td>
+		
 	</tr>
 
 	
