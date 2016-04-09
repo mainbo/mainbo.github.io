@@ -121,6 +121,7 @@ URL: space.jsp?do=friend&view=visitor&callback=fn
 		idtype:blogid     id类型                    <br>
 		cid:72            评论的id                  <br>
 		commentsubmit:true   评论提交验证通过        <br>
+		**注: 日志详情页评论和回复一样，只是评论没有cid<br>**
 		</td>
 	</tr>
 	
