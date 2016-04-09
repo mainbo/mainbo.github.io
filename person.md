@@ -10,5 +10,6 @@ URL: space.jsp?do=blog&view=me&uid=3
 
 ### 动态:
 加入uid=? 即可
+今日访客: 加入uid=? 即可。
 
 
