@@ -229,13 +229,15 @@ URL: cp.jsp
 	      您没有输入旧密码或旧密码错误，请返回重新填写。
 	      异常信息
 ### 修改头像
-URL: cp.jsp?ac=avatar
 
+```HTML
+<form action="avatar.jsp?a=uploadavatar&appid=0&uid=3" 
+	enctype="multipart/form-data" method="post">
+        上传文件1：<input type="file" name="Filedata"><br/>
+	<input type="submit" value="提交">
+</form>
+```
+**注意:** file的 name属性不能改。
 
-
-确定： 
-URL: avatar.jsp?a=rectavatar&appid=0&uid=3&hash=fbe0c3a2aa04e1b791632ec7b45a8d73&agent=df5efccb8f31c951989ef6315666dc29&avatartype=virtual&randomnumber=7029
-
-
-预览:
-URL : avatar.jsp?a=uploadavatar&appid=0&uid=3&hash=fbe0c3a2aa04e1b791632ec7b45a8d73&agent=df5efccb8f31c951989ef6315666dc29&avatartype=virtual
+result: 头像的地址。  
+null({"avatar":"http://localhost:8089/JCenterHome/data/avatar/3/3_avatar_middle.jpg"})

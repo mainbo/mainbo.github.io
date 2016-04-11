@@ -248,13 +248,16 @@ pwdsubmit:true
 
 <h3>修改头像</h3>
 
-<p>URL: cp.jsp?ac=avatar</p>
+<pre><code class="HTML">&lt;form action="avatar.jsp?a=uploadavatar&amp;appid=0&amp;uid=3" 
+    enctype="multipart/form-data" method="post"&gt;
+        上传文件1：&lt;input type="file" name="Filedata"&gt;&lt;br/&gt;
+    &lt;input type="submit" value="提交"&gt;
+&lt;/form&gt;</code></pre>
 
-<p>确定： 
-URL: avatar.jsp?a=rectavatar&amp;appid=0&amp;uid=3&amp;hash=fbe0c3a2aa04e1b791632ec7b45a8d73&amp;agent=df5efccb8f31c951989ef6315666dc29&amp;avatartype=virtual&amp;randomnumber=7029</p>
+<p><strong>注意:</strong> file的 name属性不能改。</p>
 
-<p>预览:
-URL : avatar.jsp?a=uploadavatar&amp;appid=0&amp;uid=3&amp;hash=fbe0c3a2aa04e1b791632ec7b45a8d73&amp;agent=df5efccb8f31c951989ef6315666dc29&amp;avatartype=virtual</p>
+<p>result: 头像的地址。 <br>
+null({"avatar":"<a href="http://localhost:8089/JCenterHome/data/avatar/3/3_avatar_middle.jpg">http://localhost:8089/JCenterHome/data/avatar/3/3_avatar_middle.jpg</a>"})</p>
 <script type='text/javascript'>
 $(document).ready(function(){
   if($('code').length>0){
