@@ -163,11 +163,13 @@ URL: cp.jsp?ac=friend&op=request  必须使用 post请求
 ```
 #### 搜索好友:
 	URL: cp.jsp?searchsubmit=查找&ac=friend&op=search&type=all
+	     cp.jsp?searchsubmit=查找&ac=friend&op=search&type=all&name=d
 	参数: 
-		name=                  名字  支持模糊查询
+		searchkey=             名字  支持模糊查询
 		sex=1                  男女: 1. 男  2. 女
 		resideprovince=        省
 		residecity=            市
+		endAge= 16             年龄
 结果：
 ```json
 {
