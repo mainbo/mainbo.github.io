@@ -4,6 +4,41 @@
 URL: http://172.16.8.124:8089/JCenterHome/space.jsp?do=friend
 ```json
 {
+	// 2016-4-18 10:33:30  ADD START 
+    "classes": { // 班级列表
+        "0": [
+            {
+                "user_type_name": "老师",
+                "user_name": "教师端",
+                "user_id": 7,
+                "class_id": 32,
+                "class_name": "明博班",
+                "user_type": 2,  // 用户类型 2 老师
+                "class_admin": 1
+            },
+            {
+                "user_type_name": "学生",
+                "user_name": "刘涛",
+                "user_id": 4,
+                "class_id": 32,
+                "class_name": "明博班",
+                "user_type": 3, //  3 学生
+                "class_admin": 0
+            }
+        ],
+        "1": [ // 老师的话可能会有多个班级。
+            {
+                "user_type_name": "老师",
+                "user_name": "王丽",
+                "user_id": 3,
+                "class_id": 75,
+                "class_name": "锦绣班",
+                "user_type": 2,
+                "class_admin": 1
+            }
+        ]
+    },
+   	//  END
     "viewnum": 25,
     "fgroups": [ // 好友分组
         {

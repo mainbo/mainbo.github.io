@@ -164,3 +164,51 @@ URL:org.jsp?oid=19&do=dyn
     ]
 }
 ```
+
+### 优秀空间
+URL=org.jsp?oid=3&do=superSpace
+``` json
+{
+    "classes": [
+        {
+            "id": 341,
+            "class_members": 0,
+            "class_id": "fc2d5c43f44a45ccb6ce891dd9aa0c36",
+            "class_name": "一年级二班",
+            "pic_url": "http://img2.imgtn.bdimg.com/it/u=4122623554,2452274132&fm=21&gp=0.jpg"
+        },
+    ],
+    "students": [
+        {
+            "user_type_name": "学生",
+            "user_name": "shihao",
+            "person": "http://localhost:8089/JCenterHome/person.jsp?uid=1029",
+            "class_id": "341",
+            "class_org_name": "南开小学",
+            "user_type": 3,
+            "user_id": 1029,
+            "class_org": 3,
+            "avatar": "http://localhost:8089/JCenterHome/data/avatar/000/00/10/29_real_avatar_middle.jpg",
+            "class_name": "一年级二班",
+            "class_admin": 0
+        },
+        {
+            "user_type_name": "学生",
+            "user_name": "dudy",
+            "person": "http://localhost:8089/JCenterHome/person.jsp?uid=1028",
+            "class_id": "341",
+            "class_org_name": "南开小学",
+            "user_type": 3,
+            "user_id": 1028,
+            "class_org": 3,
+            "avatar": "http://localhost:8089/JCenterHome/data/avatar/000/00/10/28_real_avatar_middle.jpg",
+            "class_name": "一年级二班",
+            "class_admin": 0
+        }
+    ],
+    "teachers": []
+}
+
+```
+
+
